@@ -1,5 +1,7 @@
 // import reactLogo from "./assets/react.svg";
 import bgSidebarMobile from "./assets/bg-sidebar-mobile.svg";
+import StepPersonalInfo from "./components/StepPersonalInfo";
+import SelectPlan from "./components/SelectPlan";
 
 function App() {
   return (
@@ -25,55 +27,11 @@ function App() {
             </div>
           </div>
 
-          <div className="mx-4 flex -translate-y-16 flex-col rounded-lg bg-fem-white py-6 px-4 pb-2 shadow-lg">
-            <h3 className="text-2xl font-bold text-fem-marine-blue">
-              Personal Info
-            </h3>
-            <p className="py-2 text-fem-cool-gray">
-              Please provider your name, email, address, and phone number.
-            </p>
-            <form className="space-y-2 pt-2 pb-6">
-              <div className="">
-                <label className="text-sm text-fem-marine-blue" htmlFor="name">
-                  Name
-                </label>
-                <input
-                  className="w-full rounded-sm border-fem-light-gray"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="e.g. Stephen King"
-                />
-              </div>
-              <div className="">
-                <label className="text-sm text-fem-marine-blue" htmlFor="email">
-                  Email address
-                </label>
-                <input
-                  className="w-full rounded-sm border-fem-light-gray"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="e.g. stephenking@lorem.com"
-                />
-              </div>
-              <div className="">
-                <label className="text-sm text-fem-marine-blue" htmlFor="phone">
-                  Phone number
-                </label>
-                <input
-                  className="w-full rounded-sm border-fem-light-gray"
-                  type="text"
-                  name="phone"
-                  id="phone"
-                  placeholder="e.g. +1 234 567 890"
-                />
-              </div>
-            </form>
-          </div>
+          {/* <StepPersonalInfo /> */}
+          <SelectPlan />
         </div>
         <div className="flex justify-end bg-fem-white">
-          <button className="m-4 rounded-md bg-fem-marine-blue px-4 py-2 font-medium text-fem-light-gray">
+          <button className="m-4 rounded-md bg-fem-marine-blue px-4 py-2 font-medium text-fem-alabaster">
             Next Step
           </button>
         </div>
