@@ -2,11 +2,12 @@
 import bgSidebarMobile from "./assets/bg-sidebar-mobile.svg";
 import StepPersonalInfo from "./components/StepPersonalInfo";
 import SelectPlan from "./components/SelectPlan";
+import AddOns from "./components/AddOns";
 
 function App() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-500 p-4">
-      <div className="max-w-[375px] bg-fem-magnolia">
+    <div className="flex min-h-screen items-center justify-center bg-slate-500">
+      <div className="flex h-screen max-w-[375px] flex-col justify-between bg-fem-magnolia md:h-auto">
         <div className="">
           {/* sidebar/topbar */}
           <div className="relative">
@@ -32,9 +33,13 @@ function App() {
           </div>
 
           {/* <StepPersonalInfo /> */}
-          <SelectPlan />
+          {/* <SelectPlan /> */}
+          <AddOns />
         </div>
-        <div className="flex justify-end bg-fem-white">
+        <div className="flex justify-between bg-fem-white">
+          <button className="my-4 ml-2 px-4 py-2 text-left font-medium text-fem-cool-gray">
+            Go Back
+          </button>
           <button className="m-4 rounded-md bg-fem-marine-blue px-4 py-2 font-medium text-fem-alabaster">
             Next Step
           </button>
