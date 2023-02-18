@@ -6,11 +6,15 @@ import SelectPlan from "./components/SelectPlan";
 function App() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-slate-500 p-4">
-      <div className="bg-fem-magnolia">
+      <div className="max-w-[375px] bg-fem-magnolia">
         <div className="">
           {/* sidebar/topbar */}
           <div className="relative">
-            <img className="" src={bgSidebarMobile} alt="Illustration motive" />
+            <img
+              className="w-full"
+              src={bgSidebarMobile}
+              alt="Illustration motive"
+            />
             <div className="absolute inset-0 top-8 flex justify-center space-x-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white bg-fem-light-blue text-fem-marine-blue">
                 1
