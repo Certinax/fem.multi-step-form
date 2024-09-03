@@ -15,7 +15,7 @@ const SelectPlan = () => {
       <div className="py-2">
         <label htmlFor="arcade">
           <input className="peer hidden" type="radio" name="plan" id="arcade" />
-          <div className="flex space-x-4 rounded-md border p-4 peer-checked:border-fem-purplish-blue peer-checked:bg-fem-magnolia">
+          <div className="flex cursor-pointer space-x-4 rounded-md border p-4 peer-checked:border-fem-purplish-blue peer-checked:bg-fem-magnolia">
             <img src={ArcadeIcon} alt="Arcade plan icon" />
             <div className="">
               <span className="block font-bold text-fem-marine-blue">
@@ -33,7 +33,7 @@ const SelectPlan = () => {
             name="plan"
             id="advanced"
           />
-          <div className="flex space-x-4 rounded-md border p-4 peer-checked:border-fem-purplish-blue peer-checked:bg-fem-magnolia">
+          <div className="flex cursor-pointer space-x-4 rounded-md border p-4 peer-checked:border-fem-purplish-blue peer-checked:bg-fem-magnolia">
             <img src={AdvancedIcon} alt="Advanced plan icon" />
             <div className="">
               <span className="block font-bold text-fem-marine-blue">
@@ -46,7 +46,7 @@ const SelectPlan = () => {
         <div className="h-3"></div>
         <label htmlFor="pro">
           <input className="peer hidden" type="radio" name="plan" id="pro" />
-          <div className="flex space-x-4 rounded-md border p-4 peer-checked:border-fem-purplish-blue peer-checked:bg-fem-magnolia">
+          <div className="flex cursor-pointer space-x-4 rounded-md border p-4 peer-checked:border-fem-purplish-blue peer-checked:bg-fem-magnolia">
             <img src={ProIcon} alt="Pro plan icon" />
             <div className="">
               <span className="block font-bold text-fem-marine-blue">Pro</span>
@@ -57,14 +57,14 @@ const SelectPlan = () => {
       </div>
       <div className="my-4 flex justify-center rounded-md bg-fem-magnolia py-3">
         <div className="flex w-12 items-center justify-between rounded-2xl bg-fem-marine-blue p-1">
-          <label htmlFor="monthly" className="inline-block">
+          <label htmlFor="monthly" className="inline-block cursor-pointer">
             <div className="relative flex items-center">
               <input
                 className="peer hidden"
                 type="radio"
                 name="period"
                 id="monthly"
-                checked
+                defaultChecked
               />
 
               <div className="h-4 w-4 rounded-full peer-checked:bg-fem-white"></div>
@@ -73,7 +73,7 @@ const SelectPlan = () => {
               </span>
             </div>
           </label>
-          <label htmlFor="yearly" className="inline-block">
+          <label htmlFor="yearly" className="inline-block cursor-pointer">
             <div className="relative flex items-center">
               <input
                 className="peer hidden"

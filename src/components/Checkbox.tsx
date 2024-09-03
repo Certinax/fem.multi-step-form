@@ -28,7 +28,7 @@ const Checkbox = ({
         className="flex cursor-pointer items-center space-x-4 py-2 px-4"
       >
         <input
-          className=" h-5 w-5 rounded-sm border-fem-light-gray text-fem-purplish-blue focus:ring-0"
+          className=" h-5 w-5 cursor-pointer rounded-sm border-fem-light-gray text-fem-purplish-blue focus:ring-0"
           type="checkbox"
           id={title}
           onClick={() => {
